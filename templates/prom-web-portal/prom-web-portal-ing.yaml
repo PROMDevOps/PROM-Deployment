@@ -22,4 +22,4 @@ spec:
               service:
                 name: prom-{{ .Values.envAlias }}-prom-web-portal
                 port:
-                  number: 80
+                  number: 8080
