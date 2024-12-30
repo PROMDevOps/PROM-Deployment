@@ -1,0 +1,30 @@
+apiVersion: v2
+name: helm-erp
+description: A Helm chart for Prom Portal
+
+type: application
+
+version: 1.0.0
+
+appVersion: "1.0"
+
+dependencies:
+  ### Kong ###
+  #- name: kong
+  #  version: "2.22.0"
+  #  repository: "https://charts.konghq.com"
+  #  condition: kong.enabled
+
+  ### pgSQL ###
+  #- name: "postgresql"
+  #  alias: postgresql-erp
+  #  condition: postgresql-erp.enabled
+  #  repository: "https://charts.bitnami.com/bitnami"
+  #  version: "15.2.9"
+
+  ### ERP React UI ###
+  - name: "generic-app"
+    alias: prom-web-portal
+    condition: prom-web-portal.enabled
+    repository: "https://charts.visonneau.fr/"
+    version: "0.0.14"
