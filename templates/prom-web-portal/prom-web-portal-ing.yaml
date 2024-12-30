@@ -20,6 +20,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: promerp-{{ .Values.envAlias }}-web-portal
+                name: prom-{{ .Values.envAlias }}-prom-web-portal
                 port:
                   number: 80
