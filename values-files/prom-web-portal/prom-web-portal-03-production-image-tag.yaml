@@ -2,4 +2,4 @@
 prom-web-portal:
   pods:
     image:
-      tag: "main-7558332"
+      tag: "v0.0.4"
