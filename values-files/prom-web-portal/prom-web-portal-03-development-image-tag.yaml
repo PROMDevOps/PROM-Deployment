@@ -2,4 +2,4 @@
 prom-web-portal:
   pods:
     image:
-      tag: "develop-c82001c"
+      tag: "develop-07ae2a2"
